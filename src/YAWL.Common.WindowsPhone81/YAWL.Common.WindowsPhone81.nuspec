@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>YAWL.Common</id>
+    <id>YAWL.Common.WindowsPhone81</id>
     <version>$version$</version>
     <authors>Massive Pixel</authors>
     <owners>Massive Pixel</owners>
