@@ -15,8 +15,8 @@ if "%nuget%" == "" (
 )
 
 REM Restoring NuGet packages
-call nuget restore src\YAWL.Common.Portable\packages.config -OutputDirectory %cd%\packages -NonInteractive
-call nuget restore src\YAWL.Common.WindowsPhone81\packages.config -OutputDirectory %cd%\packages -NonInteractive
+call nuget restore src\YAWL.Common.Portable\packages.config -OutputDirectory %cd%\src\packages -NonInteractive
+call nuget restore src\YAWL.Common.WindowsPhone81\packages.config -OutputDirectory %cd%\src\packages -NonInteractive
 
 %WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild src\YAWL.Common.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 
