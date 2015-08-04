@@ -79,10 +79,16 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Converters\BoolToObjectConverter.cs" />
+    <Compile Include="Converters\InverseBooleanConverter.cs" />
+    <Compile Include="Converters\StringFormatConverter.cs" />
     <Compile Include="Mvvm\NavigateCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewHelpers\Alt.GridDefinitions.cs" />
     <Compile Include="ViewHelpers\Alt.IsVisible.cs" />
+    <Compile Include="ViewHelpers\IBackKeyHandler.cs" />
+    <Compile Include="ViewHelpers\OnEnter.cs" />
+    <Compile Include="ViewHelpers\VisualTreeExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="GalaSoft.MvvmLight, Version=5.1.1.35049, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">

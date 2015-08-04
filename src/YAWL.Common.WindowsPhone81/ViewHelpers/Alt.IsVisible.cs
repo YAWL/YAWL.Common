@@ -47,7 +47,7 @@ namespace YAWL.Common.ViewHelpers
 
         public static void SetIsNotVisible(DependencyObject element, object value)
         {
-            element.SetValue(IsVisibleProperty, value);
+            element.SetValue(IsNotVisibleProperty, value);
         }
 
         public static object GetIsNotVisible(DependencyObject element)
