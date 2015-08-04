@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>YAWL.Common</id>
+    <version>0.1.0.0</version>
+    <authors>Massive Pixel</authors>
+    <owners>Massive Pixel</owners>
+    <projectUrl>https://github.com/YAWL/YAWL.Common</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Yet Another Windows Library is designed as a Swiss knife for Windows developers.</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>windowsphone81</tags>
+  </metadata>
+</package>
