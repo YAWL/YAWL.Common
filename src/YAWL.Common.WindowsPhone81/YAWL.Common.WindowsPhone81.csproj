@@ -82,6 +82,7 @@
     <Compile Include="Converters\BoolToObjectConverter.cs" />
     <Compile Include="Converters\InverseBooleanConverter.cs" />
     <Compile Include="Converters\StringFormatConverter.cs" />
+    <Compile Include="Messages\NavigateToPageMessage.cs" />
     <Compile Include="Mvvm\NavigateCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewHelpers\Alt.GridDefinitions.cs" />
@@ -89,6 +90,12 @@
     <Compile Include="ViewHelpers\IBackKeyHandler.cs" />
     <Compile Include="ViewHelpers\OnEnter.cs" />
     <Compile Include="ViewHelpers\VisualTreeExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YAWL.Common.Portable\YAWL.Common.Portable.csproj">
+      <Project>{a3e63a48-9634-434b-b5c3-194273b79c0c}</Project>
+      <Name>YAWL.Common.Portable</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="GalaSoft.MvvmLight, Version=5.1.1.35049, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
@@ -110,12 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\YAWL.Common.Portable\YAWL.Common.Portable.csproj">
-      <Project>{a3e63a48-9634-434b-b5c3-194273b79c0c}</Project>
-      <Name>YAWL.Common.Portable</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
