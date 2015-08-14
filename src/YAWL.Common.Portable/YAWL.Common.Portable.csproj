@@ -41,6 +41,9 @@
     <Compile Include="Extensions\SimpleIocExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\TaskExtensions.cs" />
+    <Compile Include="Mvvm\ObservableBoolProperty.cs" />
+    <Compile Include="Mvvm\ObservableProperty.cs" />
+    <Compile Include="Mvvm\ObservablePropertyHelpers.cs" />
     <Compile Include="Mvvm\ViewModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Logger\DebugLogger.cs" />
