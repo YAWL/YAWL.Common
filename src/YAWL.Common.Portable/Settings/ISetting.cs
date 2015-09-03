@@ -1,4 +1,6 @@
-﻿namespace YAWL.Common.Settings
+﻿// Copyright (c) Massive Pixel.  All Rights Reserved.  Licensed under the MIT License (MIT). See License.txt in the project root for license information.
+
+namespace YAWL.Common.Settings
 {
     /// <summary>
     /// Describes a generic setting. Used for application settings which are persisted
