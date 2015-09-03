@@ -63,7 +63,7 @@ namespace YAWL.Common.ViewHelpers
         internal static IEnumerable<GridLength> ParseFormat(string format)
         {
             if (format == null)
-                throw new ArgumentNullException("format");
+                throw new ArgumentNullException(nameof(format));
 
             return ParseFormatImplementation(format);
         }
@@ -145,8 +145,7 @@ namespace YAWL.Common.ViewHelpers
         private static void RowDefinitions_PropertyChangedCallback(DependencyObject o, DependencyPropertyChangedEventArgs args)
         {
             var grid = o as Grid;
-            if (grid != null)
-                grid.RowDefinitions.ParseAndFill(args.NewValue as string);
+            grid?.RowDefinitions.ParseAndFill(args.NewValue as string);
         }
         #endregion
 
@@ -171,8 +170,7 @@ namespace YAWL.Common.ViewHelpers
         private static void ColumnDefinitions_PropertyChangedCallback(DependencyObject o, DependencyPropertyChangedEventArgs args)
         {
             var grid = o as Grid;
-            if (grid != null)
-                grid.ColumnDefinitions.ParseAndFill(args.NewValue as string);
+            grid?.ColumnDefinitions.ParseAndFill(args.NewValue as string);
         }
         #endregion
     }

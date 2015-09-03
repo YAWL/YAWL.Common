@@ -10,16 +10,12 @@ namespace YAWL.Common.Mvvm
         public NavigateCommand()
             : base(Execute)
         {
-
         }
 
         private static void Execute()
         {
             var frame = Window.Current.Content as Frame;
-            if (frame != null)
-            {
-                frame.Navigate(typeof(TPage));
-            }
+            frame?.Navigate(typeof(TPage));
         }
     }
 
@@ -29,16 +25,12 @@ namespace YAWL.Common.Mvvm
         public NavigateCommand()
             : base(Execute)
         {
-
         }
 
         private static void Execute(TParameter parameter)
         {
             var frame = Window.Current.Content as Frame;
-            if (frame != null)
-            {
-                frame.Navigate(typeof(TPage), parameter);
-            }
+            frame?.Navigate(typeof(TPage), parameter);
         }
     }
 }

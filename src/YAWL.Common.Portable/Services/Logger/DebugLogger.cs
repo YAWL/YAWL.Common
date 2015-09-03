@@ -8,7 +8,7 @@ namespace YAWL.Common.Services.Logger
         public void LogException(Exception ex)
         {
             if (ex == null)
-                throw new ArgumentNullException("ex");
+                throw new ArgumentNullException(nameof(ex));
 
             Debug.WriteLine(ex.ToString());
         }

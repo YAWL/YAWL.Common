@@ -13,7 +13,7 @@ namespace YAWL.Common.Mvvm
         protected TReturn Get<TReturn>([CallerMemberName] string propertyName = null)
         {
             if (propertyName == null)
-                throw new ArgumentNullException("propertyName");
+                throw new ArgumentNullException(nameof(propertyName));
 
             object o;
             if (!_values.TryGetValue(propertyName, out o) ||
@@ -32,7 +32,7 @@ namespace YAWL.Common.Mvvm
         protected bool Set<TReturn>(TReturn value, [CallerMemberName] string propertyName = null)
         {
             if (propertyName == null)
-                throw new ArgumentNullException("propertyName");
+                throw new ArgumentNullException(nameof(propertyName));
 
             object existing;
             if (!_values.TryGetValue(propertyName, out existing))
