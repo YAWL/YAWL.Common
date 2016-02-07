@@ -1,0 +1,20 @@
+branches:
+  only:
+    - master
+
+version: 0.1.0.{build}
+
+os: Visual Studio 2015
+install:
+  - set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
+
+before_build:
+  nuget restore "src/YAWL.Common/YAWL.Common.sln"
+
+configuration: Release
+platform: Any CPU
+
+build:
+  parallel: true
+  project: src/YAWL.Common/YAWL.Common.sln
+  verbosity: normal
